@@ -1,0 +1,58 @@
+/* Allgemeine Styles */
+body {
+    margin: 0;
+    font-family: 'Priego Light', sans-serif;
+}
+
+/* Dark Mode für About und Selected Works */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 140px;
+}
+
+/* Menü */
+.menu {
+    display: flex;
+    gap: 110px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.menu a.active {
+    font-weight: bold;
+}
+
+/* Portfolio */
+.portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.portfolio-item img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Störer */
+.stoerer {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    cursor: pointer;
+}
