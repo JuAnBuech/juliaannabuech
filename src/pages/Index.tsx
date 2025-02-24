@@ -18,7 +18,7 @@ const Index = () => {
       >
         <img 
           src="/header_landing.png" 
-          alt="Julia Anna"
+          alt="Header"
           className="w-[584px] h-auto"
         />
       </motion.div>
