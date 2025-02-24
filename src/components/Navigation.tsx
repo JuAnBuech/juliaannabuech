@@ -9,18 +9,19 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-8 right-8 z-50">
+    <nav className="fixed left-[140px] z-50" style={{ top: "calc(140px + 584px + 50px)" }}>
       <motion.ul 
-        className="flex flex-col gap-6 text-right"
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
+        className="flex gap-[110px]"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
       >
         {links.map((link) => (
           <li key={link.href}>
             <a
               href={link.href}
-              className="text-gray-600 hover:text-black transition-colors duration-300 text-lg"
+              className="text-[34px] font-light hover:text-black transition-colors duration-300"
+              style={{ fontFamily: "Priego" }}
             >
               {link.text}
             </a>
