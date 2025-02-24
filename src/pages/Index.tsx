@@ -5,19 +5,20 @@ import AngledDot from "@/components/AngledDot";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center relative bg-white overflow-hidden">
+    <div className="min-h-screen relative bg-white overflow-hidden">
       <Navigation />
       
       <motion.div
-        className="text-center"
+        className="absolute top-[140px] left-[140px]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-6xl font-light mb-4">Julia Anna</h1>
-        <p className="text-xl text-gray-600 tracking-wide">
-          Visual Design & Art Direction
-        </p>
+        <img 
+          src="/header_landing.png" 
+          alt="Julia Anna"
+          className="w-[584px] h-auto"
+        />
       </motion.div>
 
       <AngledDot
