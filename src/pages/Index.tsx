@@ -17,8 +17,8 @@ const Index = () => {
         transition={{ duration: 0.6 }}
       >
         <img 
-          src="/header_landing.png" 
-          alt="Header"
+          src="/lovable-uploads/header_landing.png" 
+          alt="Header Landing"
           className="w-[584px] h-auto"
         />
       </motion.div>
