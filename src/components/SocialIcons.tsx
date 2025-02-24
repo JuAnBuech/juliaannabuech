@@ -1,6 +1,5 @@
 
 import { motion } from "framer-motion";
-import { Mail, Linkedin } from "lucide-react";
 
 const SocialIcons = () => {
   return (
@@ -14,16 +13,13 @@ const SocialIcons = () => {
         href="https://www.linkedin.com/in/julia-anna-lachmann-4483b5102/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-600 hover:text-black transition-colors"
+        className="transition-opacity hover:opacity-70"
       >
-        <Linkedin size={24} />
-      </a>
-      <div className="h-6 w-px bg-gray-300" />
-      <a 
-        href="mailto:julia.anna.lachmann@gmail.com"
-        className="text-gray-600 hover:text-black transition-colors"
-      >
-        <Mail size={24} />
+        <img 
+          src="/lovable-uploads/877946b2-7209-4d31-a4d0-353a121f4e5f.png" 
+          alt="Contact Icons"
+          className="h-6 w-auto"
+        />
       </a>
     </motion.div>
   );
