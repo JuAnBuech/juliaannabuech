@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,6 +52,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        'priego-light': ['Priego Light', 'sans-serif'],
+        'priego-bold': ['Priego Bold', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {

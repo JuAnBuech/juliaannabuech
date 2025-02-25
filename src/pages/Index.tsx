@@ -6,7 +6,7 @@ import Stoerer from "@/components/Stoerer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen fixed inset-0 bg-white overflow-hidden">
+    <div className="min-h-screen fixed inset-0 bg-white overflow-hidden font-priego-light">
       <Navigation />
       <SocialIcons />
       
