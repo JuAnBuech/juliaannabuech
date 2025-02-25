@@ -18,12 +18,10 @@ const Stoerer = () => {
       onClick={() => navigate("/about")}
     >
       <motion.img
-        src={isHovered ? "/stoerer_klick.png" : "/stoerer.png"}
+        src={isHovered ? "/lovable-uploads/stoerer_klick.png" : "/lovable-uploads/stoerer.png"}
         alt="Interactive element"
-        className="w-auto"
-        animate={{
-          width: isHovered ? "346px" : "173px",
-        }}
+        className="w-auto h-auto"
+        animate={{ width: isHovered ? "346px" : "173px" }}
         transition={{ duration: 0.3 }}
       />
     </motion.div>

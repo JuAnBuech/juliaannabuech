@@ -17,7 +17,17 @@ const SocialIcons = () => {
       >
         <img 
           src="/lovable-uploads/877946b2-7209-4d31-a4d0-353a121f4e5f.png" 
-          alt="Contact Icons"
+          alt="LinkedIn"
+          className="h-6 w-auto"
+        />
+      </a>
+      <a 
+        href="mailto:juliaannbuch@gmail.com"
+        className="transition-opacity hover:opacity-70"
+      >
+        <img 
+          src="/lovable-uploads/877946b2-7209-4d31-a4d0-353a121f4e5f.png" 
+          alt="Email"
           className="h-6 w-auto"
         />
       </a>
