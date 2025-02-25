@@ -16,17 +16,20 @@ const SocialIcons = () => {
         className="transition-opacity hover:opacity-70"
       >
         <img 
-          src="/lovable-uploads/877946b2-7209-4d31-a4d0-353a121f4e5f.png" 
+          src="/lovable-uploads/65b2dc4c-f487-45ec-b84f-c232a77fbaaf.png" 
           alt="LinkedIn"
           className="h-6 w-auto"
         />
       </a>
+      
+      <div className="h-6 w-[3px] bg-black"></div>
+      
       <a 
-        href="mailto:juliaannbuch@gmail.com"
+        href="mailto:juliaannabuech@gmail.com"
         className="transition-opacity hover:opacity-70"
       >
         <img 
-          src="/lovable-uploads/877946b2-7209-4d31-a4d0-353a121f4e5f.png" 
+          src="/lovable-uploads/af7b068d-3204-48c3-916c-d6784bce4041.png" 
           alt="Email"
           className="h-6 w-auto"
         />
