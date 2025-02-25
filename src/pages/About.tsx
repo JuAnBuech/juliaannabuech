@@ -1,13 +1,11 @@
 
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
-import SocialIcons from "@/components/SocialIcons";
 
 const About = () => {
   return (
     <div className="min-h-screen fixed inset-0 bg-white overflow-hidden">
       <Navigation />
-      <SocialIcons />
       
       <motion.div
         className="fixed top-[140px] left-[140px]"
