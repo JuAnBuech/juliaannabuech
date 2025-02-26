@@ -14,7 +14,7 @@ const About = () => {
         transition={{ duration: 0.6 }}
       >
         <img 
-          src="/lovable-uploads/header_about.png" 
+          src="/lovable-uploads/header_white.png" 
           alt="Header About"
           className="w-[584px] h-auto"
         />
@@ -27,7 +27,7 @@ const About = () => {
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         <img 
-          src="/lovable-uploads/about-quote.png" 
+          src="/lovable-uploads/aboutme_quote.png" 
           alt="About Quote"
           className="w-[584px] h-auto"
         />
