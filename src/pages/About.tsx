@@ -1,8 +1,17 @@
 
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    // Preload images
+    const headerImg = new Image();
+    const quoteImg = new Image();
+    headerImg.src = "/lovable-uploads/header_white.png";
+    quoteImg.src = "/lovable-uploads/aboutme_quote.png";
+  }, []);
+
   return (
     <div className="min-h-screen fixed inset-0 bg-black overflow-hidden font-priego-light">
       <Navigation currentPage="about" textColor="white" />
@@ -17,6 +26,7 @@ const About = () => {
           src="/lovable-uploads/header_white.png" 
           alt="Header About"
           className="w-[584px] h-auto"
+          loading="eager"
         />
       </motion.div>
 
@@ -30,6 +40,7 @@ const About = () => {
           src="/lovable-uploads/aboutme_quote.png" 
           alt="About Quote"
           className="w-[584px] h-auto"
+          loading="eager"
         />
       </motion.div>
     </div>
