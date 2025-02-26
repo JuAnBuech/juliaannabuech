@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 const Works = () => {
   return (
     <div className="min-h-screen fixed inset-0 bg-white overflow-hidden font-priego-light">
-      <Navigation />
+      <Navigation currentPage="works" />
       
       <motion.div
         className="fixed top-[140px] left-[140px]"

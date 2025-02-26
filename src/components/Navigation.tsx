@@ -1,11 +1,15 @@
 
 import { motion } from "framer-motion";
 
-const Navigation = () => {
+type NavigationProps = {
+  currentPage?: 'about' | 'design' | 'works';
+};
+
+const Navigation = ({ currentPage }: NavigationProps) => {
   const links = [
-    { href: "/about", text: "about me" },
-    { href: "/design", text: "about my design" },
-    { href: "/works", text: "selected works" },
+    { href: "/about", text: "about me", id: 'about' },
+    { href: "/design", text: "about my design", id: 'design' },
+    { href: "/works", text: "selected works", id: 'works' },
   ];
 
   return (
@@ -20,8 +24,9 @@ const Navigation = () => {
           <li key={link.href}>
             <a
               href={link.href}
-              className="text-[28px] font-light hover:text-black transition-colors duration-300"
-              style={{ fontFamily: "Priego" }}
+              className={`text-[28px] transition-colors duration-300 hover:text-black ${
+                currentPage === link.id ? 'font-priego-bold' : 'font-priego-light'
+              }`}
             >
               {link.text}
             </a>

@@ -4,8 +4,8 @@ import Navigation from "@/components/Navigation";
 
 const About = () => {
   return (
-    <div className="min-h-screen fixed inset-0 bg-white overflow-hidden font-priego-bold">
-      <Navigation />
+    <div className="min-h-screen fixed inset-0 bg-white overflow-hidden font-priego-light">
+      <Navigation currentPage="about" />
       
       <motion.div
         className="fixed top-[140px] left-[140px]"
