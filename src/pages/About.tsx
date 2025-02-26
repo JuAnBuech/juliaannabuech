@@ -4,8 +4,8 @@ import Navigation from "@/components/Navigation";
 
 const About = () => {
   return (
-    <div className="min-h-screen fixed inset-0 bg-white overflow-hidden font-priego-light">
-      <Navigation currentPage="about" />
+    <div className="min-h-screen fixed inset-0 bg-black overflow-hidden font-priego-light">
+      <Navigation currentPage="about" textColor="white" />
       
       <motion.div
         className="fixed top-[140px] left-[140px]"
@@ -27,7 +27,7 @@ const About = () => {
         transition={{ delay: 0.3, duration: 0.6 }}
       >
         <img 
-          src="/lovable-uploads/aboquote.png" 
+          src="/lovable-uploads/about-quote.png" 
           alt="About Quote"
           className="w-[584px] h-auto"
         />

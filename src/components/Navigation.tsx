@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 
 type NavigationProps = {
   currentPage?: 'about' | 'design' | 'works';
+  textColor?: 'white' | 'black';
 };
 
-const Navigation = ({ currentPage }: NavigationProps) => {
+const Navigation = ({ currentPage, textColor = 'black' }: NavigationProps) => {
   const links = [
     { href: "/about", text: "about me", id: 'about' },
     { href: "/design", text: "about my design", id: 'design' },
@@ -24,7 +25,9 @@ const Navigation = ({ currentPage }: NavigationProps) => {
           <li key={link.href}>
             <a
               href={link.href}
-              className={`text-[28px] transition-colors duration-300 hover:text-black ${
+              className={`text-[28px] transition-colors duration-300 ${
+                textColor === 'white' ? 'text-white hover:text-white/80' : 'text-black hover:text-black/80'
+              } ${
                 currentPage === link.id ? 'font-priego-bold' : 'font-priego-light'
               }`}
             >
