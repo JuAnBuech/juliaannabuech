@@ -9,9 +9,24 @@ type NavigationProps = {
 
 const Navigation = ({ currentPage, textColor = 'black' }: NavigationProps) => {
   const links = [
-    { to: "/about", text: "about me", id: 'about' },
-    { to: "/design", text: "about my design", id: 'design' },
-    { to: "/works", text: "selected works", id: 'works' },
+    { 
+      to: "/about", 
+      imgSrc: "/lovable-uploads/4718697d-d353-42aa-9dbd-9e0dbffe821c.png",
+      alt: "about me", 
+      id: 'about' 
+    },
+    { 
+      to: "/design", 
+      imgSrc: "/lovable-uploads/2ee56e3e-52de-42eb-91f2-766c92f8bb72.png",
+      alt: "about my design", 
+      id: 'design' 
+    },
+    { 
+      to: "/works", 
+      imgSrc: "/lovable-uploads/ae356613-0453-4db3-9253-d3b7e13712aa.png",
+      alt: "selected works", 
+      id: 'works' 
+    },
   ];
 
   return (
@@ -26,13 +41,17 @@ const Navigation = ({ currentPage, textColor = 'black' }: NavigationProps) => {
           <li key={link.to}>
             <Link
               to={link.to}
-              className={`text-[28px] transition-colors duration-300 ${
-                textColor === 'white' ? 'text-white hover:text-white/80' : 'text-black hover:text-black/80'
-              } ${
-                currentPage === link.id ? 'font-priego-bold' : 'font-priego-light'
-              }`}
+              className={`transition-opacity duration-300 hover:opacity-80`}
             >
-              {link.text}
+              <img 
+                src={link.imgSrc}
+                alt={link.alt}
+                className="h-[28px] w-auto"
+                style={{
+                  filter: textColor === 'white' ? 'brightness(0) invert(1)' : 'none',
+                  opacity: currentPage === link.id ? 1 : 0.7
+                }}
+              />
             </Link>
           </li>
         ))}
